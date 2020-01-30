@@ -1,6 +1,6 @@
 {
-  "name": "cesium-sensors",
-  "version": "0.0.2",
+  "name": "@mocu/cesium-sensors",
+  "version": "0.0.3",
   "description": "A Cesium plugin for visualizing sensor volumes.",
   "homepage": "http://cesiumjs.org",
   "license": "Apache-2.0",
@@ -14,5 +14,8 @@
     "request": "2.36.0",
     "requirejs": "2.1.14",
     "yargs": "1.2.6"
+  },
+  "publishConfig": {
+    "registry": "https://nexus.di2e.net/nexus3/repository/Private_MOCU4_NPM"
   }
 }

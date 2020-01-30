@@ -53,6 +53,7 @@ define([
         options = defaultValue(options, defaultValue.EMPTY_OBJECT);
 
         var customSensorOptions = clone(options);
+        customSensorOptions.allowPicking = defaultValue(options.allowPicking, false);
         customSensorOptions._pickPrimitive = defaultValue(options._pickPrimitive, this);
         customSensorOptions.directions = undefined;
         this._customSensor = new CustomSensorVolume(customSensorOptions);

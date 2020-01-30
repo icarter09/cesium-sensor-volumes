@@ -75,6 +75,7 @@ define([
 
         this._pickId = undefined;
         this._pickPrimitive = defaultValue(options._pickPrimitive, this);
+        this._allowPicking = defaultValue(options.allowPicking, false);
 
         this._frontFaceColorCommand = new DrawCommand();
         this._backFaceColorCommand = new DrawCommand();
@@ -527,7 +528,7 @@ define([
             }
         }
 
-        if (pass.pick) {
+        if (pass.pick && this._allowPicking) {
             var pickCommand = this._pickCommand;
 
             if (!defined(this._pickId) || (this._id !== this.id)) {
