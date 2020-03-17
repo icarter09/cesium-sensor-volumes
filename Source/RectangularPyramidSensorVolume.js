@@ -3,7 +3,6 @@ define([
         'Cesium/Core/clone',
         'Cesium/Core/defaultValue',
         'Cesium/Core/defined',
-        'Cesium/Core/defineProperties',
         'Cesium/Core/destroyObject',
         'Cesium/Core/DeveloperError',
         'Cesium/Core/Math',
@@ -13,7 +12,6 @@ define([
         clone,
         defaultValue,
         defined,
-        defineProperties,
         destroyObject,
         DeveloperError,
         CesiumMath,
@@ -64,7 +62,7 @@ define([
         updateDirections(this);
     };
 
-    defineProperties(RectangularPyramidSensorVolume.prototype, {
+    Object.defineProperties(RectangularPyramidSensorVolume.prototype, {
         xHalfAngle : {
             get : function() {
                 return this._xHalfAngle;

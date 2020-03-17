@@ -2,7 +2,6 @@
 define([
         'Cesium/Core/defaultValue',
         'Cesium/Core/defined',
-        'Cesium/Core/defineProperties',
         'Cesium/Core/DeveloperError',
         'Cesium/Core/Event',
         'Cesium/DataSources/createMaterialPropertyDescriptor',
@@ -10,7 +9,6 @@ define([
     ], function(
         defaultValue,
         defined,
-        defineProperties,
         DeveloperError,
         Event,
         createMaterialPropertyDescriptor,
@@ -45,7 +43,7 @@ define([
         this.merge(defaultValue(options, defaultValue.EMPTY_OBJECT));
     };
 
-    defineProperties(CustomPatternSensorGraphics.prototype, {
+    Object.defineProperties(CustomPatternSensorGraphics.prototype, {
         /**
          * Gets the event that is raised whenever a new property is assigned.
          * @memberof CustomPatternSensorGraphics.prototype

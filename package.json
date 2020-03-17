@@ -1,6 +1,6 @@
 {
   "name": "@mocu/cesium-sensors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Cesium plugin for visualizing sensor volumes.",
   "homepage": "http://cesiumjs.org",
   "license": "Apache-2.0",

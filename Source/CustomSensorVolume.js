@@ -7,7 +7,6 @@ define([
         'Cesium/Core/ComponentDatatype',
         'Cesium/Core/defaultValue',
         'Cesium/Core/defined',
-        'Cesium/Core/defineProperties',
         'Cesium/Core/destroyObject',
         'Cesium/Core/DeveloperError',
         'Cesium/Core/Matrix4',
@@ -35,7 +34,6 @@ define([
         ComponentDatatype,
         defaultValue,
         defined,
-        defineProperties,
         destroyObject,
         DeveloperError,
         Matrix4,
@@ -242,7 +240,7 @@ define([
         this._mode = SceneMode.SCENE3D;
     };
 
-    defineProperties(CustomSensorVolume.prototype, {
+    Object.defineProperties(CustomSensorVolume.prototype, {
         directions : {
             get : function() {
                 return this._directions;

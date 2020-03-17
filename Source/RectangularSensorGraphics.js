@@ -2,14 +2,12 @@
 define([
         'Cesium/Core/defaultValue',
         'Cesium/Core/defined',
-        'Cesium/Core/defineProperties',
         'Cesium/Core/DeveloperError',
         'Cesium/Core/Event',
         'Cesium/DataSources/createPropertyDescriptor'
     ], function(
         defaultValue,
         defined,
-        defineProperties,
         DeveloperError,
         Event,
         createPropertyDescriptor) {
@@ -43,7 +41,7 @@ define([
         this._definitionChanged = new Event();
     };
 
-    defineProperties(RectangularSensorGraphics.prototype, {
+    Object.defineProperties(RectangularSensorGraphics.prototype, {
         /**
          * Gets the event that is raised whenever a new property is assigned.
          * @memberof RectangularSensorGraphics.prototype

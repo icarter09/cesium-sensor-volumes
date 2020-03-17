@@ -2,7 +2,6 @@
 define([
         'Cesium/Core/defaultValue',
         'Cesium/Core/defined',
-        'Cesium/Core/defineProperties',
         'Cesium/Core/DeveloperError',
         'Cesium/Core/Event',
         'Cesium/DataSources/createMaterialPropertyDescriptor',
@@ -10,7 +9,6 @@ define([
     ], function(
         defaultValue,
         defined,
-        defineProperties,
         DeveloperError,
         Event,
         createMaterialPropertyDescriptor,
@@ -49,7 +47,7 @@ define([
         this.merge(defaultValue(options, defaultValue.EMPTY_OBJECT));
     };
 
-    defineProperties(ConicSensorGraphics.prototype, {
+    Object.defineProperties(ConicSensorGraphics.prototype, {
         /**
          * Gets the event that is raised whenever a new property is assigned.
          * @memberof ConicSensorGraphics.prototype
